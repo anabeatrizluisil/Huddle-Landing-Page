@@ -19,6 +19,7 @@ body  {
     background-repeat: no-repeat;
 
     width: 100%;
+    max-width: 1440px;
     /* height: 100vh; */
 }
 
@@ -42,10 +43,10 @@ body .content .text {
     width: 35%;
     margin-left: 4rem;
    
-    margin-bottom: 10rem;
 
     position: relative;
 
+    padding-bottom: 10rem;
    
 }
 
@@ -83,10 +84,27 @@ body .content .text p {
 
 .content .text .icons {
     display: flex;
+    flex-direction: row;
     justify-content: flex-end;
+    align-items: flex-end;
 
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }
 
 .content .text .icons i {
     margin-left: 15px;
+}
+
+@media (max-width: 1080px){
+    #image-mockup {
+        width: 500px;
+    }
+}
+
+@media (max-width: 880px){
+    #image-mockup {
+        width: 400px;
+    }
 }
