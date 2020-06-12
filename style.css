@@ -31,6 +31,10 @@ body header {
     margin-left: 4rem;
 }
 
+body header img {
+    width: 200px;
+}
+
 body .content { 
     margin: 0 4rem;
     min-height: 80vh;
@@ -53,8 +57,8 @@ body .content .text {
 body .content .text h1 {
     color: white;
     font-size: 2.5rem;
-    line-height: 3rem;
-    font-weight: 700;
+    line-height: 4rem;
+    font-weight: 600;
     width: 90%;
 }
 
@@ -74,12 +78,12 @@ body .content .text p {
     border: 0;
     
     color: hsl(257, 40%, 49%);
-    background-color: rgb(241, 236, 236);
+    background-color: rgb(250, 249, 249);
     font-weight: 500;
-    font-size: 16px;
+    font-size: 18px;
     font-family: 'Open Sans', 'sans-serif';
 
-    box-shadow: 10px 10px 8px hsl(257, 32%, 33%);
+    box-shadow: 5px 5px 5px hsl(256, 25%, 25%, 30%);
 
     cursor: pointer;
 }
@@ -92,6 +96,9 @@ body .content .text p {
 
 .position-icon i {
     margin-left: 15px;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 100%;
 }
 
 
@@ -112,6 +119,7 @@ body .content .text p {
 @media (min-width: 300px) and (max-width: 600px) {
     body {
         background-image: url("./images/bg-mobile.svg");
+        background-size: contain;
     }
 
     body header {
@@ -120,11 +128,11 @@ body .content .text p {
         margin-bottom: 40px;
     }
     body header img {
-        width: 150px;
+        width: 125px;
     }
 
     body .content {
-        width: 90%;
+        width: 85%;
         flex-direction: column;
         margin: auto;
         
@@ -155,8 +163,6 @@ body .content .text p {
         font-weight: 300;
     
     }
-
-    
 
     .content .text button {
         width: 15rem;
