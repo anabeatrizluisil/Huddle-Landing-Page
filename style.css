@@ -74,6 +74,7 @@ body .content .text p {
     border: 0;
     
     color: hsl(257, 40%, 49%);
+    background-color: rgb(241, 236, 236);
     font-weight: 500;
     font-size: 16px;
     font-family: 'Open Sans', 'sans-serif';
