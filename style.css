@@ -74,8 +74,9 @@ body .content .text p {
     border: 0;
     
     color: hsl(257, 40%, 49%);
-    font-weight: 400;
+    font-weight: 500;
     font-size: 16px;
+    font-family: 'Open Sans', 'sans-serif';
 
     box-shadow: 10px 10px 8px hsl(257, 32%, 33%);
 
@@ -105,4 +106,70 @@ body .content .text p {
     #image-mockup {
         width: 400px;
     }
+}
+
+@media (min-width: 300px) and (max-width: 600px) {
+    body {
+        background-image: url("./images/bg-mobile.svg");
+    }
+
+    body header {
+        margin-top: 20px;
+        margin-left: 20px;
+        margin-bottom: 40px;
+    }
+    body header img {
+        width: 150px;
+    }
+
+    body .content {
+        width: 90%;
+        flex-direction: column;
+        margin: auto;
+        
+    }
+
+    #image-mockup {
+        width: 300px;
+    }
+
+    body .content .text {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+
+    }
+
+    body .content .text h1 {
+        font-size: 20px;
+        line-height: 1.5rem;
+        text-align: center;
+    }
+
+    body .content .text p {
+        font-size: 15px;
+        font-weight: 300;
+    
+    }
+
+    
+
+    .content .text button {
+        width: 15rem;
+        height: 2.5rem;
+    }
+
+    .position-icon {
+
+        align-items: center;
+        text-align: center;
+    }
+
+    footer {
+        margin-top: 20px;
+    }
+
 }
