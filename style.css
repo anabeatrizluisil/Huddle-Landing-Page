@@ -21,6 +21,8 @@ body  {
     width: 100%;
     max-width: 1440px;
     /* height: 100vh; */
+
+    margin: auto;
 }
 
 body header {
@@ -35,18 +37,16 @@ body .content {
     display: flex;
     flex-direction: center;
     align-items: center;
+
 }
 
 body .content .text {
     display: flex;
     flex-direction: column;
-    width: 35%;
     margin-left: 4rem;
    
 
     position: relative;
-
-    padding-bottom: 10rem;
    
 }
 
@@ -82,20 +82,18 @@ body .content .text p {
     cursor: pointer;
 }
 
-.content .text .icons {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: flex-end;
-
-    position: absolute;
-    bottom: 0;
-    right: 0;
+.position-icon {
+    width: 95%;
+    align-items: center;
+    text-align: right;
 }
 
-.content .text .icons i {
+.position-icon i {
     margin-left: 15px;
 }
+
+
+
 
 @media (max-width: 1080px){
     #image-mockup {
